@@ -7,7 +7,7 @@ pipeline {
         DOCKER_HUB_REPO = 'bastianolea'  // Tu nombre de usuario de Docker Hub
         FRONTEND_IMAGE = "${DOCKER_HUB_REPO}/tingeso-frontend:latest"
         BACKEND_IMAGE = "${DOCKER_HUB_REPO}/tingeso-backend:latest"
-        GIT_REPOSITORY = "https://github.com/bastianolea/proyecto-tingeso"  // Reemplazar con tu repositorio GitHub
+        GIT_REPOSITORY = "https://github.com/Bastian444/Proyecto-Tingeso-1"  // Reemplazar con tu repositorio GitHub
         DB_HOST = "192.168.100.16" // Dirección IP para la base de datos
     }
 
@@ -39,7 +39,7 @@ pipeline {
 
         stage('Crear Imagen Docker del Frontend') {
             steps {
-                dir('proyecto-tingeso-frontend') {
+                dir('proyecto-tingeso-frontend/proyecto-tingeso-frontend') {
                     script {
                         sh 'npm install'  // Instalar dependencias
                         sh 'npm run build'  // Crear build del frontend
