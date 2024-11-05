@@ -1,0 +1,86 @@
+.loan-calculator-container {
+    background-color: #333; /* Fondo más oscuro para el contenedor */
+    border-radius: 15px; /* Bordes curvos */
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2); /* Sombra suave */
+    padding: 2rem; /* Espaciado interno */
+    max-width: 400px; /* Ancho máximo */
+    margin: 2rem auto; /* Centrar horizontalmente con margen arriba y abajo */
+    text-align: center; /* Centrar el texto */
+    color: #f9f9f9; /* Color del texto claro para contraste */
+    overflow-y: auto; /* Permitir desplazamiento vertical */
+    max-height: 80vh; /* Altura máxima del contenedor */
+}
+
+/* Nueva regla para permitir desplazamiento en el contenedor */
+.loan-calculator-content {
+    overflow-y: auto; /* Permitir desplazamiento vertical */
+    height: auto; /* Hacer que el contenido llene el contenedor */
+}
+
+.loan-calculator-container h2 {
+    color: #f9f9f9; /* Color del título claro */
+}
+
+.loan-calculator-container label {
+    display: block; /* Que cada label ocupe una línea */
+    margin: 1rem 0 0.5rem; /* Margen superior, margen inferior */
+    color: #ccc; /* Color de los labels más claro */
+}
+
+.loan-calculator-container input[type="number"],
+.loan-calculator-container input[type="text"] { /* Asegúrate de que los tipos sean correctos */
+    width: 100%; /* Ancho completo */
+    padding: 0.5rem; /* Espaciado interno */
+    border: 1px solid #555; /* Borde gris oscuro */
+    border-radius: 8px; /* Bordes curvos */
+    margin-bottom: 1.5rem; /* Aumentar margen inferior para espacio vertical */
+    background-color: #444; /* Fondo del input más oscuro */
+    color: #f9f9f9; /* Texto en el input más claro */
+    -moz-appearance: textfield; /* Firefox: ocultar flechas */
+}
+
+.loan-calculator-container input[type="number"]::-webkit-inner-spin-button,
+.loan-calculator-container input[type="number"]::-webkit-outer-spin-button {
+    -webkit-appearance: none; /* Chrome, Safari: ocultar flechas */
+    margin: 0; /* Margen a cero */
+}
+
+.loan-calculator-container input[type="radio"] {
+    margin-right: 0.5rem; /* Espacio a la derecha del círculo */
+}
+
+.loan-calculator-container button {
+    background-color: #646cff; /* Color del botón */
+    color: white; /* Color del texto del botón */
+    border: none; /* Sin borde */
+    border-radius: 8px; /* Bordes curvos */
+    padding: 0.5rem 1rem; /* Espaciado interno */
+    cursor: pointer; /* Cursor tipo mano */
+    transition: background-color 0.3s; /* Transición suave al pasar el ratón */
+}
+
+.loan-calculator-container button:hover {
+    background-color: #535bf2; /* Color del botón al pasar el ratón */
+}
+
+.loan-calculator-container fieldset {
+    border: 1px solid #555; /* Borde gris oscuro para el fieldset */
+    border-radius: 5px; /* Bordes curvos */
+    padding: 10px; /* Espaciado interno del fieldset */
+    margin: 10px 0; /* Margen superior e inferior */
+}
+
+.loan-calculator-container legend {
+    font-weight: bold; /* Negrita para el título del fieldset */
+    color: #ccc; /* Color del texto del legend */
+}
+
+.loan-calculator-container pre {
+    background-color: #444; /* Fondo del pre más oscuro */
+    color: #f9f9f9; /* Texto claro para contraste */
+    border-radius: 5px; /* Bordes curvos */
+    padding: 10px; /* Espaciado interno */
+    white-space: pre-wrap; /* Permite que el texto se ajuste a nuevas líneas */
+    word-wrap: break-word; /* Permite que las palabras largas se dividan en múltiples líneas */
+    margin-top: 1rem; /* Margen superior para espacio */
+}

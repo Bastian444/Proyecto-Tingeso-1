@@ -1,0 +1,78 @@
+.register-client-container {
+    background-color: #333; /* Fondo gris oscuro */
+    border-radius: 15px; /* Bordes curvos */
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2); /* Sombra suave */
+    padding: 2rem; /* Espaciado interno */
+    max-width: 800px; /* Ancho máximo */
+    margin: 2rem auto; /* Centrar horizontalmente con margen arriba y abajo */
+    color: #f9f9f9; /* Color del texto claro para contraste */
+    overflow-y: auto; /* Permitir desplazamiento vertical */
+    max-height: 80vh; /* Altura máxima del contenedor */
+}
+
+.register-client-container h2 {
+    text-align: center; /* Centrar el título */
+    color: #f9f9f9; /* Color del título claro */
+}
+
+.register-client-form {
+    display: flex; /* Usar flexbox para distribuir los campos */
+    flex-wrap: wrap; /* Permitir que los elementos se envuelvan */
+    gap: 1rem; /* Espacio entre los elementos */
+}
+
+.left-side,
+.right-side {
+    width: calc(50% - 0.5rem); /* Dos columnas de igual ancho con margen */
+}
+
+.file-upload-section {
+    width: 100%; /* Sección para archivos ocupa todo el ancho */
+    display: flex; /* Usar flexbox para alinear botones */
+    gap: 1rem; /* Espacio entre botones de subida de archivos */
+}
+
+label {
+    display: block; /* Que cada label ocupe una línea */
+    margin: 1rem 0 0.5rem; /* Margen superior, margen inferior */
+    color: #ccc; /* Color de los labels más claro */
+    font-family: Arial, sans-serif; /* Establecer la fuente */
+    font-size: 1rem; /* Tamaño de fuente */
+}
+
+input,
+select {
+    width: 100%; /* Ancho completo */
+    padding: 0.5rem; /* Espaciado interno */
+    border: 1px solid #555; /* Borde gris oscuro */
+    border-radius: 8px; /* Bordes curvos */
+    margin-bottom: 1.5rem; /* Aumentar margen inferior para espacio vertical */
+    background-color: #444; /* Fondo del input más oscuro */
+    color: #f9f9f9; /* Texto en el input más claro */
+    font-family: Arial, sans-serif; /* Establecer la fuente */
+    font-size: 1rem; /* Tamaño de fuente */
+}
+
+input[type="file"] {
+    border: 1px solid #555; /* Borde gris oscuro */
+    background-color: #444; /* Fondo del input más oscuro */
+    color: #f9f9f9; /* Texto en el input más claro */
+}
+
+button {
+    display: block; /* Que el botón se comporte como bloque */
+    background-color: #646cff; /* Color del botón */
+    color: white; /* Color del texto del botón */
+    border: none; /* Sin borde */
+    border-radius: 8px; /* Bordes curvos */
+    padding: 0.5rem 1rem; /* Espaciado interno */
+    cursor: pointer; /* Cursor tipo mano */
+    margin: 1rem auto; /* Margen auto para centrar */
+    transition: background-color 0.3s; /* Transición suave al pasar el ratón */
+    font-family: Arial, sans-serif; /* Establecer la fuente */
+    font-size: 1rem; /* Tamaño de fuente */
+}
+
+button:hover {
+    background-color: #535bf2; /* Color del botón al pasar el ratón */
+}

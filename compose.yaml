@@ -1,0 +1,21 @@
+version: "3.8"
+services:
+  frontend:
+    container_name: tingeso-frontend
+    image: bastianolea/tingeso-frontend:latest
+    ports:
+      - "5190:80"
+    deploy:
+      restart_policy:
+        condition: on-failure
+
+  backend:
+    container_name: tingeso-backend
+    image: bastianolea/tingeso-backend:latest
+    ports:
+      - "8090:8090"
+    environment:
+      - DB_HOST=192.168.100.16
+    deploy:
+      restart_policy:
+        condition: on-failure

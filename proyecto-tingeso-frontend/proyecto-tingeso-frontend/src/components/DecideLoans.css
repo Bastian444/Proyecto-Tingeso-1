@@ -1,0 +1,103 @@
+/* DecideLoans.css */
+
+.loan-approval-status {
+    margin-bottom: 20px;
+    font-size: 1.25rem;
+    font-weight: bold;
+    text-align: center;
+}
+
+.loan-approval-status.approved {
+    color: green;
+}
+
+.loan-approval-status.rejected {
+    color: red;
+}
+
+.loan-approval-status.moderate {
+    color: #FFD700; /* Amarillo */
+}
+
+.approved-text {
+    color: green;
+    font-weight: bold;
+}
+
+.rejected-text {
+    color: red;
+    font-weight: bold;
+}
+
+.moderate-text {
+    color: #FFD700; /* Amarillo */
+    font-weight: bold;
+}
+
+.rejection-reason {
+    margin-top: 8px;
+    font-size: 0.9rem;
+}
+
+/* Estilos generales para botones */
+.loan-button {
+    margin: 5px;
+    padding: 10px 20px;
+    font-weight: bold;
+    border: none;
+    border-radius: 4px;
+    color: white !important; /* Forzamos el color del texto en blanco */
+    cursor: pointer;
+    text-transform: none;
+}
+
+/* Botones de estado con colores específicos */
+.btn-pendiente {
+    background-color: #A52A2A !important; /* Café */
+    color: white !important;
+}
+
+.btn-evaluacion {
+    background-color: #FFD700 !important; /* Amarillo */
+    color: white !important;
+}
+
+.btn-preaprobada {
+    background-color: #32CD32 !important; /* Verde lima */
+    color: white !important;
+}
+
+.btn-aprobacion-final {
+    background-color: #006400 !important; /* Verde oscuro */
+    color: white !important;
+}
+
+.btn-aprobada {
+    background-color: #008000 !important; /* Verde */
+    color: white !important;
+}
+
+.btn-rechazada {
+    background-color: #FF0000 !important; /* Rojo */
+    color: white !important;
+}
+
+.btn-desembolso {
+    background-color: #0000FF !important; /* Azul */
+    color: white !important;
+}
+
+/* Añadir hover y estilo adicional para todos los botones */
+.btn-pendiente, .btn-evaluacion, .btn-preaprobada, .btn-aprobacion-final, .btn-aprobada, .btn-rechazada, .btn-desembolso {
+    margin: 5px;
+    font-weight: bold;
+    padding: 10px 20px;
+    border-radius: 4px;
+    text-transform: none;
+    cursor: pointer;
+}
+
+.btn-evaluacion:hover, .btn-pendiente:hover, .btn-preaprobada:hover, .btn-aprobacion-final:hover, .btn-aprobada:hover, .btn-rechazada:hover, .btn-desembolso:hover {
+    opacity: 0.9;
+    transform: scale(1.05);
+}
